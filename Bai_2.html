@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let arr = [3, 5, 7, 8, 9, 12, 14, 16, 18];
+    let result = 0;
+
+    function total(arr) {
+        for (i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 !== 0) {
+
+                document.write("odd number la:" + arr[i]);
+                document.write("<br>");
+                result = result + arr[i];
+            }
+        }
+        return result;
+    }
+
+    document.write("sum of add numbers:" + total(arr));
+</script>
+</body>
+

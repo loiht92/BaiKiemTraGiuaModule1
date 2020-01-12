@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let currentDate = new Date();
+    let currentYear = currentDate.getFullYear();
+    let yearOfBirth = parseInt(prompt("Enter a year"));
+    let calculateAge = currentYear - yearOfBirth;
+
+    if (yearOfBirth < currentYear) {
+        document.write("Age: " + calculateAge)
+    } else if (yearOfBirth === currentYear){
+        document.write("You have just been born");
+    }else {
+        document.write("Invalid.");
+    }
+</script>
+
+</body>
+</html>

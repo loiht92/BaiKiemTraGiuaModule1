@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+<script>
+    function checkPrime(number) {
+        if (number < 2) {
+            return false
+        } else {
+            for (i = 2; i < number; i++) {
+                if (number % i === 0) {
+                    return false;
+                }
+            }
+            return true
+        }
+    }
+
+    function displayPrimeNumber() {
+        let limit = Number(document.getElementById("one").value);
+        for (let i = 2; i <= limit; i++) {
+            if (checkPrime(i) === true) {
+                document.write(i);
+                document.write("<br>")
+            }
+        }
+    }
+</script>
+</head>
+<body>
+<input type="text" id="one">
+<button onclick="displayPrimeNumber()()">show</button>
+</body>
+</html>
